@@ -332,7 +332,7 @@ inline mat<3, 3> antisym(const vec<3>& w) {
   // clang-format on
 }
 
-inline mat<3, 3> euler_rotation(const vec<3>& pyr) {
+__declspec(dllexport) inline mat<3, 3> euler_rotation(const vec<3>& pyr) {
   float CP = cos(pyr[0]);
   float SP = sin(pyr[0]);
   float CY = cos(pyr[1]);

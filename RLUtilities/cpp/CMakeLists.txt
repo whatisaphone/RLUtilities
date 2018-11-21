@@ -6,6 +6,7 @@ add_definitions(-DASSET_PATH="${PROJECT_SOURCE_DIR}/assets/")
 add_subdirectory(pybind11)
 
 add_library(bot_utils STATIC
+  ${PROJECT_SOURCE_DIR}/src/AerialTurn.cpp
   ${PROJECT_SOURCE_DIR}/src/car.cpp
   ${PROJECT_SOURCE_DIR}/src/ball.cpp
   ${PROJECT_SOURCE_DIR}/src/bvh.cpp
